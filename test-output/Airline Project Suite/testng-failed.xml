@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Airline Project Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Airline Project TestCases Test(failed)">
+    <classes>
+      <class name="project2_Airline.U_TC10_Flight_Rules_Info">
+        <methods>
+          <include name="RulesTC10_Fare_Baggage_Cancelsn"/>
+          <include name="extentreport1"/>
+          <include name="extentreport"/>
+          <include name="Launching"/>
+          <include name="Closing"/>
+        </methods>
+      </class> <!-- project2_Airline.U_TC10_Flight_Rules_Info -->
+      <class name="project2_Airline.TC6_Econmy_Buisness_FirstClses">
+        <methods>
+          <include name="extentreport1"/>
+          <include name="extentreport"/>
+          <include name="Launching"/>
+          <include name="SearchTC6_Ecnmy_Business_FirstClses"/>
+          <include name="Closing"/>
+        </methods>
+      </class> <!-- project2_Airline.TC6_Econmy_Buisness_FirstClses -->
+      <class name="project2_Airline.TC7_MultiCity_Flights">
+        <methods>
+          <include name="extentreport1"/>
+          <include name="SearchTC7_MultiCity_Flights"/>
+          <include name="extentreport"/>
+          <include name="Launching"/>
+          <include name="Closing"/>
+        </methods>
+      </class> <!-- project2_Airline.TC7_MultiCity_Flights -->
+      <class name="project2_Airline.Y_TC14_DomesticFlight_RoundTrip">
+        <methods>
+          <include name="extentreport1"/>
+          <include name="extentreport"/>
+          <include name="DomesticRoundTC14_TripFlight"/>
+          <include name="Launching"/>
+          <include name="Closing"/>
+        </methods>
+      </class> <!-- project2_Airline.Y_TC14_DomesticFlight_RoundTrip -->
+      <class name="project2_Airline.TC4_OneWay_Flight">
+        <methods>
+          <include name="SearchTC4_OneWayFlight"/>
+          <include name="extentreport1"/>
+          <include name="extentreport"/>
+          <include name="Launching"/>
+          <include name="Closing"/>
+        </methods>
+      </class> <!-- project2_Airline.TC4_OneWay_Flight -->
+      <class name="project2_Airline.Z_TC15_CreditCard_PaymentMethod">
+        <methods>
+          <include name="PaymentPageTC15_Slct_CredtCard"/>
+          <include name="extentreport1"/>
+          <include name="extentreport"/>
+          <include name="Launching"/>
+          <include name="Closing"/>
+        </methods>
+      </class> <!-- project2_Airline.Z_TC15_CreditCard_PaymentMethod -->
+      <class name="project2_Airline.TC8_Seat_Selection">
+        <methods>
+          <include name="CheckSeatTC8_Selection"/>
+          <include name="extentreport1"/>
+          <include name="extentreport"/>
+          <include name="Launching"/>
+          <include name="Closing"/>
+        </methods>
+      </class> <!-- project2_Airline.TC8_Seat_Selection -->
+      <class name="project2_Airline.V_TC11_EnterEvery_Fields">
+        <methods>
+          <include name="extentreport1"/>
+          <include name="EnterEveryFieldsTC11_inSearchPage"/>
+          <include name="extentreport"/>
+          <include name="Launching"/>
+          <include name="Closing"/>
+        </methods>
+      </class> <!-- project2_Airline.V_TC11_EnterEvery_Fields -->
+    </classes>
+  </test> <!-- Airline Project TestCases Test(failed) -->
+</suite> <!-- Failed suite [Airline Project Suite] -->

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="project1_Amazon.H_TC8_ProductSort">
+        <methods>
+          <include name="Product_SortAmazon"/>
+          <include name="Launching"/>
+          <include name="Closing"/>
+        </methods>
+      </class> <!-- project1_Amazon.H_TC8_ProductSort -->
+      <class name="project1_Amazon.G_TC7_Product_details_Display">
+        <methods>
+          <include name="Launching"/>
+          <include name="Closing"/>
+          <include name="ProductDetails_DisplayAmazon"/>
+        </methods>
+      </class> <!-- project1_Amazon.G_TC7_Product_details_Display -->
+      <class name="project1_Amazon.TC12_SelectEach_PaymentMthd">
+        <methods>
+          <include name="Launching"/>
+          <include name="Closing"/>
+          <include name="Select_AllPaymentAmazon"/>
+        </methods>
+      </class> <!-- project1_Amazon.TC12_SelectEach_PaymentMthd -->
+      <class name="project1_Amazon.F_TC6_SearchingByFilters">
+        <methods>
+          <include name="SearchProduct_FilterAmazon"/>
+          <include name="Launching"/>
+          <include name="Closing"/>
+        </methods>
+      </class> <!-- project1_Amazon.F_TC6_SearchingByFilters -->
+      <class name="project1_Amazon.C_TC3_Fail_Login">
+        <methods>
+          <include name="LoginFail_ToAmazon"/>
+          <include name="Launching"/>
+          <include name="Closing"/>
+        </methods>
+      </class> <!-- project1_Amazon.C_TC3_Fail_Login -->
+      <class name="project1_Amazon.TC11_BuyCheckout_PaymentReview">
+        <methods>
+          <include name="BuyProduct_Checkout_PaymentAmazon"/>
+          <include name="Launching"/>
+          <include name="Closing"/>
+        </methods>
+      </class> <!-- project1_Amazon.TC11_BuyCheckout_PaymentReview -->
+      <class name="project1_Amazon.TC13_Apply_CouponCode">
+        <methods>
+          <include name="ApplyCouponCode_OrderingAmazon"/>
+          <include name="Launching"/>
+          <include name="Closing"/>
+        </methods>
+      </class> <!-- project1_Amazon.TC13_Apply_CouponCode -->
+      <class name="project1_Amazon.E_TC5_SearchProduct">
+        <methods>
+          <include name="Launching"/>
+          <include name="Closing"/>
+          <include name="SearchProductAmazon"/>
+        </methods>
+      </class> <!-- project1_Amazon.E_TC5_SearchProduct -->
+      <class name="project1_Amazon.D_TC4_EditProfile">
+        <methods>
+          <include name="Launching"/>
+          <include name="EditProfileAmazon"/>
+          <include name="Closing"/>
+        </methods>
+      </class> <!-- project1_Amazon.D_TC4_EditProfile -->
+      <class name="project1_Amazon.B_TC2_Login">
+        <methods>
+          <include name="Launching"/>
+          <include name="Closing"/>
+          <include name="LoginToAmazon"/>
+        </methods>
+      </class> <!-- project1_Amazon.B_TC2_Login -->
+      <class name="project1_Amazon.I_TC9_AddToCart">
+        <methods>
+          <include name="Launching"/>
+          <include name="Closing"/>
+          <include name="Product_AddToCartAmazon"/>
+        </methods>
+      </class> <!-- project1_Amazon.I_TC9_AddToCart -->
+      <class name="project1_Amazon.TC_10_Add_Update_RemoveCart">
+        <methods>
+          <include name="Launching"/>
+          <include name="Closing"/>
+          <include name="AddProduct_RemoveCartAmazon"/>
+        </methods>
+      </class> <!-- project1_Amazon.TC_10_Add_Update_RemoveCart -->
+      <class name="project1_Amazon.TC15_WithOut_Login_Cart">
+        <methods>
+          <include name="Launching"/>
+          <include name="Closing"/>
+          <include name="ReachTill_Cart_WithoutLoginAmazon"/>
+        </methods>
+      </class> <!-- project1_Amazon.TC15_WithOut_Login_Cart -->
+      <class name="project1_Amazon.TC14_5StarRating">
+        <methods>
+          <include name="Launching"/>
+          <include name="Closing"/>
+          <include name="Star5_Rating_LastOrder_Amazon"/>
+        </methods>
+      </class> <!-- project1_Amazon.TC14_5StarRating -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
