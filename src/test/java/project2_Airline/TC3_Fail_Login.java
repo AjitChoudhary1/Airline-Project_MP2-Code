@@ -17,74 +17,74 @@ public class TC3_Fail_Login extends Airline_BaseClass
 	@Test (retryAnalyzer=Airline_RetryAnalyzer.class)
 	public void LoginTC3_WrongCred_ToAirIndia()
 	{
-		
+
 	        // 3 Test login with invalid credentials and ensure proper error messages are displayed.
 
-		
-	   
-		
+
+
+
 	           System.out.println("Title is-> " + driver.getTitle());
-	           
-	        
-	        
-	            
-	              
-	        
-	
+
+
+
+
+
+
+
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	 @DataProvider
      public Object [][] UnPwdExcel() throws EncryptedDocumentException, IOException
      {
     	 Object [][] unpwd= new Object[1] [2];
-		 
+
 		   FileInputStream f1= new FileInputStream("C:\\Users\\ajitc\\eclipse-workspace\\Maven_Programs2\\Excel Sheet\\Login Details.xlsx");
-		       
-		        Workbook w1=  WorkbookFactory.create(f1);			           
-		        
-		        
+
+		        Workbook w1=  WorkbookFactory.create(f1);
+
+
 		        String un1 = NumberToTextConverter.toText(w1.getSheet("Login").getRow(0).getCell(0).getNumericCellValue());
 		        String pwd1 = w1.getSheet("Login").getRow(0).getCell(1).getStringCellValue();
-		        
+
 			    unpwd[0][0]=un1;
 			    unpwd[0][1]=pwd1;
-    	 
+
 		return unpwd;
-	
+
      }
-	 
+
 
 }

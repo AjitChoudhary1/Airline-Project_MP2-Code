@@ -20,15 +20,15 @@ public class X_TC13_CouponCode_BookingFlight extends Airline_BaseClass
 	@Test (retryAnalyzer=Airline_RetryAnalyzer.class)
 	public void ApplyCouponTC13_Code_FlightBook()
 	{
-		
+
 	        // 13 Check if user is able to apply for coupon code while booking the flight trip
 
-		
+
 		Reporter_Manager.test = Reporter_Manager.extent.createTest("ApplyCouponTC13_Code_FlightBook");
 
-		
+
 	           System.out.println("Title is-> " + driver.getTitle());
-	           
+
 	                 Airline_HomePage hp= new Airline_HomePage(driver);
 	                              hp.RemoveLogin(driver);
 	  			                                 Reporter_Manager.test.info("Removing is done");
@@ -43,54 +43,54 @@ public class X_TC13_CouponCode_BookingFlight extends Airline_BaseClass
 	                              acp.ApplyCode();
 		  			                              Reporter_Manager.test.info("Coupon code applied");
 
-	        
-	            
+
+
 		 	 		                              Reporter_Manager.test.pass("TestCase is Succesfull");
-	
+
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	 @DataProvider
      public Object [][] UnPwdExcel() throws EncryptedDocumentException, IOException
      {
     	 Object [][] unpwd= new Object[1] [2];
-		 
+
 		   FileInputStream f1= new FileInputStream("C:\\Users\\ajitc\\eclipse-workspace\\Maven_Programs2\\Excel Sheet\\Login Details.xlsx");
-		       
-		        Workbook w1=  WorkbookFactory.create(f1);			           
-		        
-		        
+
+		        Workbook w1=  WorkbookFactory.create(f1);
+
+
 		        String un1 = NumberToTextConverter.toText(w1.getSheet("Login").getRow(0).getCell(0).getNumericCellValue());
 		        String pwd1 = w1.getSheet("Login").getRow(0).getCell(1).getStringCellValue();
-		        
+
 			    unpwd[0][0]=un1;
 			    unpwd[0][1]=pwd1;
-    	 
+
 		return unpwd;
-	
+
      }
-	 
+
 
 }

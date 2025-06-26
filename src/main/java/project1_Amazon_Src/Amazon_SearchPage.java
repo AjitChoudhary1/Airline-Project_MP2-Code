@@ -15,16 +15,16 @@ import org.testng.asserts.SoftAssert;
 public class Amazon_SearchPage                                 //For TC6 and TC8
 {
 	   WebDriver driver;
-	   
+
 		SoftAssert s1= new SoftAssert();
-	   
+
 	   WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(10));
-		
+
 		//step-1 Locate component
-		
+
 	   @FindBy(id="twotabsearchtextbox")
 	       WebElement searchproduct;
-	   
+
 	   @FindBy(xpath = "//a[@aria-label=\"Apply the filter Puma to narrow results\"]")
 		WebElement pumacheckbox;
 
@@ -36,41 +36,41 @@ public class Amazon_SearchPage                                 //For TC6 and TC8
 
 		@FindBy(xpath = "(//div[@class='a-section'])[3]/a")
 		WebElement rating4nup;
-		
+
 		@FindBy(xpath = "//input[@id=\"p_36/range-slider_slider-item_lower-bound-slider\"]")
 		WebElement lowrange;
-		
+
 
 		@FindBy(xpath = "//input[@id=\"p_36/range-slider_slider-item_upper-bound-slider\"]")
 		WebElement upperange;
-		
+
 		@FindBy(xpath="//a[@class='a-link-normal s-no-outline']")
 		  List<WebElement> allproduct;
-		
-		
+
+
 		//step-2 Separate method for each component
-		
-		
+
+
 		public void SearchProduct()
 		{
 	    	 wait.until(ExpectedConditions.visibilityOf(searchproduct));
 			searchproduct.sendKeys("Shoe" + Keys.ENTER);
-			
-			         //Assertion 1			   
+
+			         //Assertion 1
 			   s1.assertEquals(allproduct.size()>15, true);
 		}
-		
-		public void CheckBoxClick() 
+
+		public void CheckBoxClick()
 		{
 	    	 wait.until(ExpectedConditions.visibilityOf(pumacheckbox));
 			pumacheckbox.click();
-			
+
 			//s1.assertEquals(driver.getTitle(), "Amazon.in : shoe");
-			
+
 			       // System.out.println("Title is-> " + driver.getTitle());
 		}
 
-		public void PriceClick() 
+		public void PriceClick()
 		{
 	    	 wait.until(ExpectedConditions.visibilityOf(pricefilter));
 			pricefilter.click();
@@ -87,13 +87,13 @@ public class Amazon_SearchPage                                 //For TC6 and TC8
 		{
 	    	 wait.until(ExpectedConditions.visibilityOf(rating4nup));
 			rating4nup.click();
-			
+
 			   // System.out.println("Title is-> " + driver.getTitle());
-			    
+
 			s1.assertAll("All Assertion not Passed");
 		}
 
-		public String Validation_Success() 
+		public String Validation_Success()
 		{
 	    	 wait.until(ExpectedConditions.visibilityOf(lowrange));
 	    	 wait.until(ExpectedConditions.visibilityOf(upperange));
@@ -104,9 +104,9 @@ public class Amazon_SearchPage                                 //For TC6 and TC8
 			System.out.println("price --->" + s3);
 			return s3;
 		}
-		
+
 		//step-3 Initialize element by PageFactory class inside constructor
-		
+
 		public Amazon_SearchPage(WebDriver driver)
 		{
 			PageFactory.initElements(driver, this);

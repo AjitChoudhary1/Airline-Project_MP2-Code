@@ -11,14 +11,14 @@ public class Z_TC15_WithOut_Login_Cart extends AmazonPr_BaseClass
 	 @Test (retryAnalyzer=Amazon_RetryAnalyzer.class)
 	   public void ReachTillTC15_Cart_WithoutLoginAmazon()
 	   {
-		 
+
 		  // 15 Reach till cart page without login in amazon application
-		   
+
 			Reporter_Manager.test = Reporter_Manager.extent.createTest("ReachTillTC15_Cart_WithoutLoginAmazon");
 
 		   System.out.println("Title is-> " + driver.getTitle());
-		   
-		          
+
+
 	       Amazon_ProductPage4 cart= new Amazon_ProductPage4(driver);
 	              cart.SearchProduct();
 			                   Reporter_Manager.test.info("HoverOver is done");
@@ -30,13 +30,13 @@ public class Z_TC15_WithOut_Login_Cart extends AmazonPr_BaseClass
                               Reporter_Manager.test.info("Control to the child window");
 
 	              cart.CartOpen();
-		   
-		   
-	              
+
+
+
 	 	 		                Reporter_Manager.test.pass("TestCase is Succesfull");
 
-		   
+
 	   }
-     
-	   
+
+
 }

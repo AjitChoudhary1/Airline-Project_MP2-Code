@@ -23,17 +23,17 @@ public class Airline_BaseClass extends Airline_ITestListener {
 	{
 		Reporter_Manager.startReport();
 	}
-	
+
 	@AfterSuite
 	public void extentreport1()
 	{
 		Reporter_Manager.flushReport();
 	}
-	
+
 	@BeforeMethod
 	@Parameters("Browsers")
 	public void Launching(@Optional("chrome") String NameOfBrowser) {
-		
+
 		if (NameOfBrowser.equals("edge")) {
 
 			EdgeOptions options = new EdgeOptions();
@@ -49,7 +49,7 @@ public class Airline_BaseClass extends Airline_ITestListener {
 
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("start-maximized");
-			
+
 			//ChromeOptions options1= new ChromeOptions();
 		      options.addArguments("--disable-notifications");
 
@@ -66,7 +66,7 @@ public class Airline_BaseClass extends Airline_ITestListener {
 
 		         driver.get("https://www.cleartrip.com/");
 
-		
+
 		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
 
 		System.out.println();
@@ -112,8 +112,8 @@ public class Airline_BaseClass extends Airline_ITestListener {
  * <groupId>org.junit</groupId> <artifactId>junit-bom</artifactId>                // 1st Part
  * above dependencies <version>5.11.0</version> <type>pom</type>
  * <scope>import</scope> </dependency> </dependencies>
- * 
- * 
+ *
+ *
  * </dependencyManagement>
  */
 

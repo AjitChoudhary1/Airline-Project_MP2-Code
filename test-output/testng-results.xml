@@ -11,20 +11,20 @@
       <![CDATA[Browser Is Closed Sucessfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-06-15T23:26:48 IST" name="Default suite" finished-at="2025-06-15T23:27:03 IST" duration-ms="14777">
+  <suite started-at="2025-06-26T15:15:25 IST" name="Default suite" finished-at="2025-06-26T15:15:38 IST" duration-ms="12888">
     <groups>
     </groups>
-    <test started-at="2025-06-15T23:26:48 IST" name="Default test" finished-at="2025-06-15T23:27:03 IST" duration-ms="14777">
-      <class name="project2_Airline.TC4_OneWay_Flight">
-        <test-method is-config="true" signature="extentreport()[pri:0, instance:project2_Airline.TC4_OneWay_Flight@38467116]" started-at="2025-06-15T23:26:48 IST" name="extentreport" finished-at="2025-06-15T23:26:48 IST" duration-ms="346" status="PASS">
+    <test started-at="2025-06-26T15:15:25 IST" name="Default test" finished-at="2025-06-26T15:15:38 IST" duration-ms="12888">
+      <class name="project1_Amazon.TC3_Fail_Login">
+        <test-method is-config="true" signature="extentreport()[pri:0, instance:project1_Amazon.TC3_Fail_Login@5c6648b0]" started-at="2025-06-26T15:15:24 IST" name="extentreport" finished-at="2025-06-26T15:15:25 IST" duration-ms="235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentreport -->
-        <test-method is-config="true" signature="Launching(java.lang.String)[pri:0, instance:project2_Airline.TC4_OneWay_Flight@38467116]" started-at="2025-06-15T23:26:48 IST" name="Launching" finished-at="2025-06-15T23:26:55 IST" duration-ms="6611" status="PASS">
+        <test-method is-config="true" signature="Launching(java.lang.String)[pri:0, instance:project1_Amazon.TC3_Fail_Login@5c6648b0]" started-at="2025-06-26T15:15:25 IST" name="Launching" finished-at="2025-06-26T15:15:31 IST" duration-ms="6733" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
@@ -34,25 +34,25 @@
             </line>
           </reporter-output>
         </test-method> <!-- Launching -->
-        <test-method signature="SearchTC4_OneWayFlight()[pri:0, instance:project2_Airline.TC4_OneWay_Flight@38467116]" started-at="2025-06-15T23:26:55 IST" name="SearchTC4_OneWayFlight" finished-at="2025-06-15T23:27:03 IST" duration-ms="7840" status="PASS">
+        <test-method signature="LoginFailTC3_ToAmazon()[pri:0, instance:project1_Amazon.TC3_Fail_Login@5c6648b0]" started-at="2025-06-26T15:15:31 IST" name="LoginFailTC3_ToAmazon" finished-at="2025-06-26T15:15:37 IST" duration-ms="5919" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test Case Is Pass]]>
             </line>
           </reporter-output>
-        </test-method> <!-- SearchTC4_OneWayFlight -->
-        <test-method is-config="true" signature="Closing()[pri:0, instance:project2_Airline.TC4_OneWay_Flight@38467116]" started-at="2025-06-15T23:27:03 IST" name="Closing" finished-at="2025-06-15T23:27:03 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- LoginFailTC3_ToAmazon -->
+        <test-method is-config="true" signature="Closing()[pri:0, instance:project1_Amazon.TC3_Fail_Login@5c6648b0]" started-at="2025-06-26T15:15:38 IST" name="Closing" finished-at="2025-06-26T15:15:38 IST" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser Is Closed Sucessfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- Closing -->
-        <test-method is-config="true" signature="extentreport1()[pri:0, instance:project2_Airline.TC4_OneWay_Flight@38467116]" started-at="2025-06-15T23:27:03 IST" name="extentreport1" finished-at="2025-06-15T23:27:04 IST" duration-ms="909" status="PASS">
+        <test-method is-config="true" signature="extentreport1()[pri:0, instance:project1_Amazon.TC3_Fail_Login@5c6648b0]" started-at="2025-06-26T15:15:38 IST" name="extentreport1" finished-at="2025-06-26T15:15:38 IST" duration-ms="677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentreport1 -->
-      </class> <!-- project2_Airline.TC4_OneWay_Flight -->
+      </class> <!-- project1_Amazon.TC3_Fail_Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

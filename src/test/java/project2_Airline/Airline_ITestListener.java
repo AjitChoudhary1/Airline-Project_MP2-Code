@@ -15,33 +15,33 @@ import org.testng.Reporter;
 public class Airline_ITestListener implements ITestListener {
 
 	public static WebDriver driver;
-	
+
     Date d1= new Date();
      Date d2= new Date(d1.getTime());                                                         //                                                                                  use epoch cnvrtr to convrt time
 
         String f1=   d2.toString();
-    // Format -->     dd-MM-yyyy_HH-mm-ss    
+    // Format -->     dd-MM-yyyy_HH-mm-ss
 
   String date= f1.substring(8, 10);
      String month= f1.substring(4, 7);
        String year=  f1.substring(f1.length()-4);
-       
+
        String hour=  f1.substring(11, 13);
        String min=  f1.substring(14, 16);
           String sec=  f1.substring(17, 19);
-          
+
       String f2=  date+"-".concat(month)+"-".concat(year)+"_".concat(hour)+"-".concat(min)+"-".concat(sec);
 
     @Override
-    public void onTestSuccess(ITestResult ontestsuccess) {  
-	
-	   System.out.println("Epoch Time-> " +d1.getTime());                                                         
+    public void onTestSuccess(ITestResult ontestsuccess) {
+
+	   System.out.println("Epoch Time-> " +d1.getTime());
         System.out.println(d2);
         System.out.println(f2);
-	          
+
 	TakesScreenshot t1 = (TakesScreenshot) driver;
 	File source = t1.getScreenshotAs(OutputType.FILE);
-		File destination = new File("C:\\Users\\ajitc\\eclipse-workspace\\Maven_Programs2\\ScreenShots AirlinePrj\\Airline Pass Sshot"
+		File destination = new File("C:\\Users\\ajitc\\eclipse-workspace - new\\Maven_Projects_Programs\\ScreenShots AirlinePrj\\Airline Pass Sshot"
 				                                              + "\\TCPass " +ontestsuccess.getName()+"_" +f2+".png");
 
 		try {
@@ -60,14 +60,14 @@ public class Airline_ITestListener implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult ontestfailure) {
-		
-		System.out.println("Epoch Time-> " +d1.getTime());             
+
+		System.out.println("Epoch Time-> " +d1.getTime());
         System.out.println(d2);
      System.out.println(f2);
 
 	TakesScreenshot t1 = (TakesScreenshot) driver;
 	File source = t1.getScreenshotAs(OutputType.FILE);
-		File destination = new File("C:\\Users\\ajitc\\eclipse-workspace\\Maven_Programs2\\ScreenShots AirlinePrj\\Airline Fail Sshot"
+		File destination = new File("C:\\Users\\ajitc\\eclipse-workspace - new\\Maven_Projects_Programs\\ScreenShots AirlinePrj\\Airline Fail Sshot"
 			                                                  + "\\TCFail " +ontestfailure.getName()+"_" +f2+".png");
 
 		try {

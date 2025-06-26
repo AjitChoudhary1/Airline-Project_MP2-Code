@@ -17,11 +17,11 @@ public class Airline_RegisterPage                                               
 {
 
 	public WebDriver driver;
-	
+
 	 WebDriverWait  wait= new WebDriverWait(driver, Duration.ofSeconds(10));
 
 
-	
+
 	// ClearTrip
 
 	// step- 1 - Locate each component using @FindBy Annotation
@@ -29,18 +29,18 @@ public class Airline_RegisterPage                                               
 	@FindBy(id = "mobile")
 	WebElement mobilenum;
 
-	 
+
 
 //step- 2 - Create separate methods for each component to perform action
 
 	public void SignUpCT(WebDriver driver) {
-		
+
 		wait.until(ExpectedConditions.visibilityOf(mobilenum));
 		mobilenum.sendKeys("8233668067");
-                     
+
 	}
 
-	
+
 
 	// step- 3 - Initializing the elements using PageFactory class inside the
 	// constructor
@@ -49,25 +49,25 @@ public class Airline_RegisterPage                                               
 		PageFactory.initElements(driver, this);
 	}
 
-	
-	
 
-	
-	
-	
-	
-	
-	
-	
-	
- 
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	// ***************************************************************************************************************
 
 	// step- 1 - Locate each component using @FindBy Annotation
@@ -122,63 +122,63 @@ public class Airline_RegisterPage                                               
 	 @FindBy(xpath="//input[@id='promotionCheck']")
 	 WebElement checkbox;
 
-	@FindBy(xpath = "//button[@id='submit-button']") 
+	@FindBy(xpath = "//button[@id='submit-button']")
 	WebElement submitbutton;
-	
-	
+
+
 
 // step- 2 - Create separate methods for each component to perform action
 
 	public void Signin() {
-		
+
 		wait.until(ExpectedConditions.visibilityOf(acceptbutton));
 		acceptbutton.click();
-		
+
 		wait.until(ExpectedConditions.visibilityOf(signinclick));
 		signinclick.click();
 	}
 
 	public void Signup() {
-		
+
 		wait.until(ExpectedConditions.visibilityOf(signup));
 		signup.click();
 	}
 
 	public void CreateAccount() {
-		
+
 		wait.until(ExpectedConditions.visibilityOf(titleclick));
 		titleclick.click();
-		
+
 		wait.until(ExpectedConditions.visibilityOf(mrclick));
 		mrclick.click();
 
 		wait.until(ExpectedConditions.visibilityOf(firstname));
 		firstname.sendKeys("Ajit");
-		
+
 		wait.until(ExpectedConditions.visibilityOf(lastname));
 		lastname.sendKeys("Choudhary");
 
 		wait.until(ExpectedConditions.visibilityOf(dateofbirth));
 		dateofbirth.click();
-		
+
 		wait.until(ExpectedConditions.visibilityOf(month));
 		month.click();
-		
+
 		wait.until(ExpectedConditions.visibilityOf(year));
 		year.click();
-		
+
 		wait.until(ExpectedConditions.visibilityOf(date));
 		date.click();
 
 		wait.until(ExpectedConditions.visibilityOf(email));
 		email.sendKeys("ajitchoudhary0802@gmail.com");
-		
+
 		wait.until(ExpectedConditions.visibilityOf(confirmemail));
 		confirmemail.sendKeys("ajitchoudhary0802@gmail.com");
 
 		wait.until(ExpectedConditions.visibilityOf(phoneno));
 		phoneno.sendKeys("8233668068");
-		
+
 		wait.until(ExpectedConditions.visibilityOf(confirmphoneno));
 		confirmphoneno.sendKeys("8233668068");
 
@@ -187,10 +187,10 @@ public class Airline_RegisterPage                                               
 	}
 
 	public void Submit(WebDriver driver) {
-		
+
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].removeAttribute('disabled')", submitbutton);
-		
+
 		wait.until(ExpectedConditions.visibilityOf(submitbutton));
 
 		System.out.println("The Button Is Enable-> " + submitbutton.isEnabled());
@@ -205,17 +205,17 @@ public class Airline_RegisterPage                                               
 
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
 	// *****************************************************************************************************************
 	// SouthWest Airline
 
@@ -293,40 +293,40 @@ public class Airline_RegisterPage                                               
 	}
 
 	public void AccountDetails() {
-		
+
 		wait.until(ExpectedConditions.visibilityOf(frstname));
 		frstname.sendKeys("Ajit");
-		
+
 		wait.until(ExpectedConditions.visibilityOf(lstname));
 		lstname.sendKeys("Choudhary");
-		
+
 		wait.until(ExpectedConditions.visibilityOf(gender));
 		gender.click();
-		
+
 		wait.until(ExpectedConditions.visibilityOf(male));
 		male.click();
-		
+
 		wait.until(ExpectedConditions.visibilityOf(dob));
 		dob.sendKeys("01/20/1998");
-		
+
 		wait.until(ExpectedConditions.visibilityOf(country));
 		country.sendKeys(Keys.CONTROL + "a", Keys.BACK_SPACE);
-		
+
 		wait.until(ExpectedConditions.visibilityOf(country));
 		country.sendKeys("India");
-		
+
 		wait.until(ExpectedConditions.visibilityOf(streetadd));
 		streetadd.sendKeys("Tatarwi");
-		
+
 		wait.until(ExpectedConditions.visibilityOf(aptmnt));
 		aptmnt.sendKeys("Tatarwi");
-		
+
 		wait.until(ExpectedConditions.visibilityOf(city));
 		city.sendKeys("Badi Khatu");
-		
+
 		wait.until(ExpectedConditions.visibilityOf(state));
 		state.sendKeys("Rajasthan");
-		
+
 		wait.until(ExpectedConditions.visibilityOf(zipcode));
 		zipcode.sendKeys("341301");
 
@@ -336,28 +336,28 @@ public class Airline_RegisterPage                                               
 		wait.until(ExpectedConditions.visibilityOf(indiacode));
 		Select s1 = new Select(indiacode);
 		s1.selectByVisibleText("91");
-		
+
 		wait.until(ExpectedConditions.visibilityOf(indiacode));
 		indiacode.click();
 
 		wait.until(ExpectedConditions.visibilityOf(mobileno));
 		mobileno.sendKeys("8233668068");
-		
+
 		wait.until(ExpectedConditions.visibilityOf(mail));
 		mail.sendKeys("ajitchoudhary0802@gmail.com");
-		
+
 		wait.until(ExpectedConditions.visibilityOf(cnfrmmail));
 		cnfrmmail.sendKeys("ajitchoudhary0802@gmail.com");
-		
+
 		wait.until(ExpectedConditions.visibilityOf(un));
 		un.sendKeys("ajitchoudhary");
-		
+
 		wait.until(ExpectedConditions.visibilityOf(pwd));
 		pwd.sendKeys                                                                                                                                                                                                                                             ("Aj@803131");
-		
+
 		wait.until(ExpectedConditions.visibilityOf(uncheck));
 		uncheck.click();
-		
+
 		wait.until(ExpectedConditions.visibilityOf(creataccountbtn));
 		// creataccountbtn.click();
 	}
